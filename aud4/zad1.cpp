@@ -1,4 +1,4 @@
-x#include <iostream>
+#include <iostream>
 #include <cstring>
 
 using namespace std;
@@ -29,7 +29,7 @@ public:
         this->isAvailable = avail;
     }
 
-    Book(Book &b) {
+    Book(const Book &b) {
         strcpy(this->title, b.title);
         strcpy(this->author, b.author);
         this->isAvailable = b.isAvailable;
