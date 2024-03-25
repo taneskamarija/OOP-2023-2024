@@ -15,7 +15,7 @@ public:
         strcpy(this->city, city);
     };
 
-    Team(Team &t) {
+    Team(const Team &t) {
         strcpy(this->name, t.name);
         this->year = t.year;
         strcpy(this->city, t.city);
